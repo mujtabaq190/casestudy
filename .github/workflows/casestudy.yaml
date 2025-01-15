@@ -52,6 +52,6 @@ jobs:
 
       - name: Update ECS service
         run: |
-          aws ecs update-service --cluster casestudy-cluster --service casestudy1-service --force-new-deployment
+          aws ecs update-service --cluster casestudy-cluster --service casestudy1 --force-new-deployment
 
 
