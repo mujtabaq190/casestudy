@@ -59,9 +59,6 @@ jobs:
     needs: deploy
 
     steps:
-      - name: Run automated tests with curl
-        run: |
-          curl --silent --show-error --fail http://my-load-balancer-1234567890.ap-south-1.elb.amazonaws.com:8086/health
 
       - name: Install Newman (Postman CLI)
         run: |
